@@ -1,0 +1,341 @@
+body
+    min-width: 320px
+    background: #fff
+    font-family: Source Sans Pro!important
+    font-style: normal
+    font-weight: 400
+
+section:nth-child(odd)
+    background-color: #f4f4f4
+
+.scrolled
+    background: #0A0A0A
+    opacity: 0.8
+    transition: background-color 200ms linear  
+    
+img
+    max-width: 100%
+    height: auto
+
+header
+    .navbar
+        height: 80px
+        .navbar-brand
+            margin-right: 40px
+        .menu_min
+            position: fixed
+            top: 0
+            right: 0
+            width: 200px
+            height: 100%
+            background: #0A0A0A
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24)
+            .navbar-nav
+                margin-top: 100px
+                margin-left: 18px
+                .nav-item
+                    margin-bottom: 16px
+                    .dropdown-menu
+                        background: #0A0A0A
+                        .dropdown-item
+                            &:hover
+                                background: #0A0A0A
+        .login
+            width: 36px
+            height: 36px
+            border: 2px solid #fff
+            box-sizing: border-box
+            border-radius: 2px
+            background: url(../img/Login_icon.png) no-repeat center
+        .navbar-toggler
+            width: 36px
+            height: 36px
+            border: 2px solid #fff
+            box-sizing: border-box
+            border-radius: 2px
+            padding: 0
+            z-index: 10
+            span
+                display: block
+            .navbar-toggler-icon
+                background-image: none
+                width: 22px
+                height: 22px
+                margin: auto
+                z-index: 200
+                .sw-topper,
+                .sw-bottom,
+                .sw-footer
+                    position: relative
+                    width: 22px
+                    height: 2px
+                    background: rgb(255, 255, 255)
+                    border: none
+                    border-radius: 4px 4px 4px 4px
+                    transition: transform 0.5s, top 0.2s
+                .sw-topper
+                    top: 2px
+                .sw-topper-min
+                    top: 6px!important
+                .sw-bottom
+                    top: 8px
+                    transition-delay: 0.2s, 0s
+                .sw-footer
+                    top: 14px
+                    transition: all 0.5s
+                    transition-delay: 0.1s
+            .active
+                .sw-topper
+                    top: 10px
+                    transform: rotate(-45deg)
+                .sw-bottom
+                    top: 7px
+                    transform: rotate(45deg)
+                .sw-footer
+                    opacity: 0
+                    top: 0
+                    transform: rotate(180deg)
+        .nav-item
+            margin-right: 20px
+            .nav-link
+                font-size: 17px
+                line-height: 21px
+                letter-spacing: 0.5px
+                color: #fff
+                padding: 0
+                &:after
+                    margin-left: 0
+                    vertical-align: 0
+                &:hover
+                    color: #FFDD2C
+            .dropdown-menu
+                background: #000
+                border-radius: 4px
+                padding: 16px
+                .dropdown-item
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 24px
+                    letter-spacing: 0.44px
+                    color: #fff
+                    mix-blend-mode: normal
+                    &:hover
+                        background: #000
+                        color: #FFDD2C
+        .show>.nav-link
+            color: #FFDD2C!important
+        .form-inline
+            .btn
+                width: 85px
+                height: 32px
+                outline: none
+                font-weight: 600
+                font-size: 14px
+                line-height: 18px
+                text-align: center
+                letter-spacing: 0.5px
+            .btn-outline-light
+                border: 2px solid #fff
+                box-sizing: border-box
+                border-radius: 2px
+                margin-right: 8px
+            .btn-primary
+                background: #FFDD2C
+                border-radius: 2px
+                border-color: #FFDD2C
+                color: #000
+    .jumbotron
+        height: 480px
+        margin-bottom: 0
+        background: url(../img/Acs-001.jpg) center
+        background-size: cover
+        &:before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 480px
+            top: 0
+            background: rgba(0,0,0,0.5)
+        h1
+            font-family: Quicksand
+            font-weight: bold
+            font-size: 48px
+            line-height: 60px
+            letter-spacing: -1.5px
+            color: #fff
+            margin-top: 108px
+            padding: 0
+        p
+            font-weight: normal
+            font-size: 17px
+            line-height: 22px
+            letter-spacing: 0.1px
+            color: #fff
+            padding: 0
+            
+section
+    padding-top: 52px
+    padding-bottom: 52px
+    h2
+        font-family: Quicksand
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        color: #000
+    h3
+        font-family: Quicksand
+        font-weight: bold
+        font-size: 22px
+        line-height: 27px
+        color: #000
+        
+    p
+        font-weight: normal
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.44px
+        color: #000
+    .link_text_wrapper
+        text-align: center
+        .link_text
+            font-weight: normal
+            font-size: 16px
+            line-height: 20px
+            letter-spacing: 0.44px
+            color: #004EFF
+    .media
+        margin-top: 32px
+        img
+            margin-right: 28px
+        .img_foto
+            margin-right: 20px
+        h5
+            font-weight: bold
+            font-size: 22px
+            line-height: 27px
+            color: #000
+    .embed-responsive
+        background: url(../img/video-cover.png)
+        background-size: cover
+    h6
+        font-weight: 600
+        font-size: 17px
+        line-height: 24px
+        letter-spacing: 0.5px
+        color: #000
+
+#become_partner
+    position: relative
+    background: url(../img/become_partner.png) center
+    background-size: cover
+    &:before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 101%
+        top: 0
+        background: rgba(0,0,0,0.5)       
+    .container
+        position: relative
+    h2,
+    p
+        color: #fff
+    .btn
+        width: 202px
+        height: 40px
+        outline: none
+        font-weight: 600
+        font-size: 17px
+        line-height: 24px
+        text-align: center
+        letter-spacing: 0.5px
+        margin-top: 16px
+    .btn-primary
+        background-color: #FFDD2C
+        border-radius: 2px
+        border-color: #FFDD2C
+        color: #000
+    .btn-outline-light
+        border: 2px solid #FFFFFF
+        box-sizing: border-box
+        border-radius: 2px
+        margin-left: 8px
+        
+footer
+    background-color: #0A0A0A
+    padding-top: 36px
+    h6
+        font-weight: 600
+        font-size: 17px
+        line-height: 21px
+        letter-spacing: 0.5px
+        color: #FFDD2C
+    .h6_white
+        color: #fff
+    ul
+        list-style: none
+        padding-left: 0
+        margin-bottom: 0
+        a
+            font-weight: normal
+            font-size: 16px
+            line-height: 24px
+            letter-spacing: 0.44px
+            color: #fff
+            mix-blend-mode: normal
+        .support
+            &:after
+                content: url(../img/baseline.png)
+                margin-left: 2px
+        hr
+            width: 80px
+            margin-left: 0
+            margin-top: 12px
+            margin-bottom: 12px
+            border-top: 1px solid rgba(255, 255, 255, 0.2)
+    .hr_footer
+        margin-top: 52px
+        margin-bottom: 0
+        border-top: 1px solid rgba(255, 255, 255, 0.2)
+    .p_left_footer,
+    .p_right_footer
+        font-weight: normal
+        font-size: 14px
+        line-height: 64px
+        letter-spacing: 0.25px
+        color: #fff
+        margin-bottom: 0
+    .social_icons
+        text-align: center
+        margin-top: 16px
+        margin-bottom: 16px
+        i
+            width: 32px
+            height: 32px
+            border: 1px solid #fff
+            background-color: #fff
+            border-radius: 16px
+            line-height: 32px
+            font-size: 20px  
+    .inquire
+        text-align: right
+        .yellow
+            color: #FFDD2C
+    
+        
+             
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
